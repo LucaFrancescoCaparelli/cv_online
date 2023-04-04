@@ -1,0 +1,256 @@
+/****** Estilos generales *******/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.seccion-oscura {
+  color: #fff;
+  /* background-color: #1b1b32; */
+  background-color: #1b1b32f2;
+}
+
+.seccion-clara {
+  color: #000;
+  background: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.4rem;
+}
+
+.text-negro {
+  color: #000;
+}
+
+.texto-blanco {
+  color: #fff;
+}
+
+
+/****** Barra de navegacion *******/
+.navbar {
+  padding: 1rem;
+  /* background-color: #212529; */
+  background-color: #1b1b32;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  scale: 1.2;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-style: wavy;
+}
+
+.active {
+  scale: 1.2;
+  color: #fff !important;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-style: wavy;
+}
+
+/******* Seccion Hero *******/
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px !important;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 1rem 3rem;
+}
+
+.hero-inferior-imagen {
+  max-width: 500px;
+}
+
+.hero-foto-perfil {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.hero-principal h2 {
+  padding: 1rem;
+  color: #615151;
+  font-size: 1.4rem;
+}
+
+
+/****** Sobre mí ******/
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 800px;
+  text-align: center;
+}
+
+
+/****** Proyectos ******/
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: #000;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+/****** Conctacto ******/
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #fff;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: #000;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Pie de pagina (footer) */
+footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 360px;
+  }
+}
